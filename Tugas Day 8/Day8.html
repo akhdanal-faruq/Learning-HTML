@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Form</title>
+  </head>
+  <body>
+    <form action="/Tugas Day 1/Day1practice.html" method="get"></form>
+    <h1>Learning Form</h1>
+    <h2>Contoh Formulir HTML</h2>
+    <form action="login.php" method="post">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required />
+      <br />
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+      <br />
+      <label type="checkbox" for="remember">Remember me</label>
+      <br />
+      <input type="submit" value="Login" />
+    </form>
+    <h2>Contoh Formulir Kontak</h2>
+    <form action="contact.php" method="post">
+      <label for="name">Nama:</label>
+      <input type="text" id="name" name="name" required />
+      <br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <br />
+      <label for="message">Pesan:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      <br />
+      <input type="submit" value="Kirim Pesan" />
+    </form>
+    <h2>Contoh Formulir Pendaftaran</h2>
+    <form action="register.php" method="post">
+      <label for="fullname">Nama Lengkap:</label>
+      <input type="text" id="fullname" name="fullname" required />
+      <br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <br />
+      <label for="password">Kata Sandi:</label>
+      <input type="password" id="password" name="password" required />
+      <br />
+      <label for="confirm_password">Konfirmasi Kata Sandi:</label>
+      <input type="password" id="confirm_password" name="confirm_password" required />
+      <br />
+      <input type="submit" value="Daftar" />
+    </form>
+    <h2>Contoh Formulir Pencarian</h2>
+    <form action="search.php" method="get">
+      <label for="search">Cari:</label>
+      <input type="text" id="search" name="search" required />
+      <br />
+      <input type="submit" value="Cari" />
+    </form>
+    <h2>Contoh Formulir Pilihan</h2>
+    <form action="option.php" method="post">
+        <label for="color">Pilih Warna:</label>
+        <select id="color" name="color">
+            <option value="red">Merah</option>
+            <option value="green">Hijau</option>
+            <option value="blue">Biru</option>
+        </select>
+        <br />
+        <input type="submit" value="Kirim Pilihan" />
+    </form>
+    <h2>Contoh Formulir Upload File</h2>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label for="file">Pilih File:</label>
+        <input type="file" id="file" name="file" required />
+        <br />
+        <input type="submit" value="Unggah File" />
+    </form>
+    <h2>Contoh Formulir Radio Button</h2>
+    <form action="radio.php" method="post">
+        <label for="gender">Jenis Kelamin:</label> 
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Laki-laki</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Perempuan</label>
+        <br />
+        <input type="submit" value="Kirim Pilihan"> 
+    </form>
+    <form action="checkbox.php" method="post">
+    <select name="agama">
+        <option value="Islam">Islam</option>
+        <option value="Kristen">Kristen</option>
+        <option value="Hindu">Hindu</option>
+        <option value="Buddha">Buddha</option>
+    </select>
+    </form>
+    <form action="datetime.php" method="post">datetime</form>
+    <h2>Contoh Formulir Tanggal dan Waktu</h2>
+    <form action="datetime.php" method="post">
+        <label for="date">Tanggal:</label>
+        <input type="date" id="date" name="date" required />
+        <br />
+        <label for="time">Waktu:</label>
+        <input type="time" id="time" name="time" required />
+        <br />
+        <input type="submit" value="Kirim Tanggal dan Waktu" /> 
+  </body>
+</html>
