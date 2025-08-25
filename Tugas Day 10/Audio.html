@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Task</title>
+    <style>
+        a {
+            margin-right: 10px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #333;
+        }
+        audio {
+            margin-top: 20px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+        }
+        br {
+            margin-bottom: 20px;
+        }
+        head {
+            margin-bottom: 20px;
+        }
+        head a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+        head a:hover {
+            text-decoration: underline;
+        }
+        head a:visited {
+            color: #0056b3;
+        }
+        head a:active {
+            color: #004085;
+        }
+        head a[rel="Video"] {
+            color: #28a745;
+        }
+
+        head a[rel="Audio"] {
+            color: #17a2b8;
+        }
+        head a[rel="Video"]:hover {
+            color: #218838;
+        }
+        head a[rel="Audio"]:hover {
+            color: #138496;
+        }
+        head a[rel="Video"]:visited {
+            color: #1e7e34;
+        }
+    </style>
+</head>
+<body>
+    <a href="Tugasday10.html">Home</a>
+    <a rel="Video" href="Video.html">Video</a>
+    <a rel="Audio" href="Audio.html">Audio</a>
+    <h1>This is my audio link task</h1>
+    <audio controls>
+        <source src="/Sample/SampleAudio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.    
+    </audio>
+    <br>
+    <h1>This is my audio download task</h1>
+    <audio controls>
+        <source src="/Sample/SampleAudio.ogg" type="audio/ogg">
+        Your browser does not support the audio element.    
+    </audio> 
+</body>
+</html>
