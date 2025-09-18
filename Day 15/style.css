@@ -1,0 +1,125 @@
+body {
+  font-family: "poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333;
+  text-align: center;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  color: #fff;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+nav {
+  background-color: #333;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  background-color: #ddd;
+  color: black;
+}
+
+header img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+header button {
+  border-radius: 8px;
+  border-color: #000000;
+  border: 2px solid #000000;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+header button:hover {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s;
+}
+article {
+  border-radius: 8px;
+  border-color: #cccccc;
+  border: 1px solid #cccccc;
+  display: inline-block;
+  vertical-align: middle;
+  justify-items: space-between;
+  width: 400px;
+  height: 300px;
+  padding: 10px;
+}
+.kiwi {
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px;
+}
+.mango {
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px;
+}
+.orange {
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px;
+}
+article img {
+  width: 400px;
+  height: 300px;
+  border-radius: 12px;
+  margin-right: 20px;
+  border-color: #000000;
+  border: 5px solid #000000;
+}
+article img:hover {
+    border-color: aqua;
+    transition: color 1s;
+}
+article h3 {
+    border: 2px #000000;
+    border-style:dashed;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    color: #000000;
+}
+footer {
+  color: #000000;
+  padding-top: 300px;
+  text-align: center;
+}
+
