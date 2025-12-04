@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>poster</title>
+    <style>
+      @font-face {
+        font-family: "Billionaire";
+        src: url("headlinerno.45 demo.ttf") format("truetype");
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #000;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        letter-spacing: 5px;
+        background-image: url("/Day 25/31e174bf65157cd4e447d32981e5768c.jpg");
+      }
+      h1 {
+        font-size: 5em;
+        margin-bottom: 20px;
+        font-family: "Billionaire", sans-serif;
+        color: #b0b0b0;
+      }
+      h2 {
+        margin-top: 5px;
+        font-family: "Billionaire", sans-serif;
+        color: #b0b0b0;
+        animation: load-text 3s forwards infinite;
+        animation-delay: 3s;
+      }
+      h2::after {
+        content: "Loading.";
+        animation: load-text 3s forwards infinite;          
+      }
+      .container {
+        width: 80%;
+        background: #333;
+        border-radius: 5px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        border: 3px solid #b0b0b0;
+        border-color: #b0b0b0;
+      }
+      .proggres-bar {
+        width: 0;
+        height: 30px;
+        background: #567e3b;
+        background: linear-gradient(
+          90deg,
+          rgba(86, 126, 59, 1) 30%,
+          rgba(55, 81, 38, 1) 100%
+        );
+        animation: load 3s forwards;
+      }
+      .buttons {
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 1em;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background: #567e3b;
+        color: #fff;
+        transition: background 0.3s;
+      }
+      button:hover {
+        background: #455d2e;
+      }
+      @keyframes load {
+        to {
+          width: 100%;
+        }
+      }
+      @keyframes load-text {
+        0% {
+          content: "Loading.";
+        }
+        33% {
+          content: "Loading..";
+        }
+        66% {
+          content: "Loading...";
+        }
+        100% {
+          content: "Loading.";
+        }
+      }
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 3em;
+        }
+      }
+      h2 {
+        font-size: 2em;
+      }
+    </style>
+  </head>
+  <body background="/Day 25/31e174bf65157cd4e447d32981e5768c.jpg">
+    <h1>BILLIONAIRE</h1>
+    <div class="container">
+      <div class="proggres-bar"></div>
+    </div>
+    <h2></h2>
+    <div class="buttons">
+      <button type="button">Like</button>
+      <button type="button"> save</button>
+    </div>
+  </body>
+</html>
